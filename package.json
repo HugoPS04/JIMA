@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@barba/core": "^2.9.7",
+    "gsap": "^3.9.1",
+    "prettier": "^2.5.1"
+  }
+}

@@ -1,0 +1,108 @@
+header {
+  position: fixed;
+  background-color: transparent;
+  z-index: 9999;
+}
+
+.navbar {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: row;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.navbar .navbar-logo img {
+  width: 30%;
+  height: auto;
+}
+.navbar .navbar-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.navbar .navbar-items > ul {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+.navbar .navbar-items > ul #nav-devis {
+  color: #ef7d00 !important;
+}
+.navbar .navbar-items > ul li {
+  position: relative;
+  margin-left: 1.5rem;
+}
+.navbar .navbar-items > ul li .navbar-item {
+  padding-bottom: 0.3rem;
+}
+.navbar .navbar-items > ul li > a {
+  display: inline-block;
+  position: relative;
+  font-family: Heebo, sans-serif;
+  font-weight: 200;
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+.navbar .navbar-items > ul li > a::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  background-color: darkorange;
+  width: 100%;
+  height: 1px;
+  transition: left 0.5s ease-in-out;
+}
+.navbar .navbar-items > ul li > ul:hover + a::before, .navbar .navbar-items > ul li a:hover::before, .navbar .navbar-items > ul li a:focus::before {
+  left: 0%;
+}
+.navbar .navbar-items > ul .nested-list {
+  position: relative;
+}
+.navbar .navbar-items > ul .nested-list:hover > .collapse-nav-item, .navbar .navbar-items > ul .nested-list:focus > .collapse-nav-item {
+  opacity: 1;
+  top: 0;
+}
+.navbar .navbar-items > ul .collapse-nav-item {
+  background-color: #222222;
+  list-style: none;
+  display: block;
+  opacity: 0;
+  position: absolute;
+  left: -10px;
+  top: 100%;
+  font-family: Poppins, sans-serif;
+  font-weight: 200;
+  font-size: 0.7em;
+  z-index: 9999999;
+  margin-top: 2rem;
+  margin-left: 0.3rem;
+  text-align: left;
+  transition: top 0.3s ease-in, opacity 0.3s ease-in;
+}
+.navbar .navbar-items > ul .collapse-nav-item > li {
+  margin: 0;
+  padding: 0.5rem;
+}
+.navbar .navbar-items > ul .collapse-nav-item > li:not(li:last-child)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+}
+.navbar .navbar-items > ul > li a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+/*# sourceMappingURL=header.css.map */
